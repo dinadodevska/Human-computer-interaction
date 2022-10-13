@@ -28,19 +28,14 @@ Screenshots from the project:
 Screenshots from the exercises:
 <br />
 1.  
-![Screenshot_8](https://user-images.githubusercontent.com/61621779/195680585-d68ae66d-851c-450a-9a6d-66bde3d4faff.png)  
-  
+![Screenshot_8](https://user-images.githubusercontent.com/61621779/195680585-d68ae66d-851c-450a-9a6d-66bde3d4faff.png)
 ![Screenshot_9](https://user-images.githubusercontent.com/61621779/195680590-323f3a95-25f8-4477-bd36-65705e827bf2.png)  
   
   2.  
-![Screenshot_10](https://user-images.githubusercontent.com/61621779/195680592-cd3a6b45-cecf-4c94-af79-59aac930c20d.png)  
-  
-![Screenshot_11](https://user-images.githubusercontent.com/61621779/195680594-fa13a918-eda2-41b5-bf92-f05effd1d7fa.png)  
-  
-![Screenshot_12](https://user-images.githubusercontent.com/61621779/195680597-6fb0f4f5-27f9-43c2-8270-9e2ba16d2e00.png)  
-  
-![Screenshot_13](https://user-images.githubusercontent.com/61621779/195680598-8d174cd8-65d4-435d-a4c9-63f04360d01a.png)  
-  
+![Screenshot_10](https://user-images.githubusercontent.com/61621779/195680592-cd3a6b45-cecf-4c94-af79-59aac930c20d.png)
+![Screenshot_11](https://user-images.githubusercontent.com/61621779/195680594-fa13a918-eda2-41b5-bf92-f05effd1d7fa.png)
+![Screenshot_12](https://user-images.githubusercontent.com/61621779/195680597-6fb0f4f5-27f9-43c2-8270-9e2ba16d2e00.png)
+![Screenshot_13](https://user-images.githubusercontent.com/61621779/195680598-8d174cd8-65d4-435d-a4c9-63f04360d01a.png)
 ![Screenshot_14](https://user-images.githubusercontent.com/61621779/195680603-a2648a3b-089c-4cc0-b996-c03af50863e6.png)  
   
   3.  
