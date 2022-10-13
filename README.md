@@ -4,7 +4,8 @@ In "laboratoriski_vezbi" there are 4 exercises made using Bootstrap.
 
 Screenshots from the project:
 
-![Screenshot_1](https://user-images.githubusercontent.com/61621779/195672503-621eed0b-621b-494b-ad53-71684673e4ea.png)
+![Screenshot_1](https://user-images.githubusercontent.com/61621779/195672503-621eed0b-621b-494b-ad53-71684673e4ea.png)   
+
 ![Screenshot_2](https://user-images.githubusercontent.com/61621779/195672506-42eda989-333a-434f-87ee-5ec9f19113ec.png)
 ![Screenshot_3](https://user-images.githubusercontent.com/61621779/195672510-5e6a846f-3117-4058-af75-8b73a6903354.png)
 ![Screenshot_4](https://user-images.githubusercontent.com/61621779/195672513-29f9e0a5-b069-447c-bc34-7e4a1321a5a6.png)
