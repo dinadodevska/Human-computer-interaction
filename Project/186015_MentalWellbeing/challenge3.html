@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css"
+          rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+
+    <style>
+        .container label{
+            font-weight: lighter;
+            color: #465362;
+            font-size: 15px;
+        }
+        p {
+            color: #465362;
+        }
+        .container .form-switch{
+            color: #465362;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.44), 0 17px 50px 0 rgba(0, 0, 0, 0.39);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 200px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            position: center;
+            margin-left: 20%;
+            color: #465362;
+            padding: 20px;
+            border: 1px solid #888;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            float: right;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body style="background-color: #FAE3E3">
+<div w3-include-html="menu.html"></div>
+<script>
+    w3.includeHTML();
+</script>
+
+<div class="container">
+    <div class="row" style="margin-top: 30px">
+        <div class="col-lg-5">
+            <img src="img\de-an-sun-yT3f9kVeLYM-unsplash.jpg" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+            <h1 style="font-size: 40px; color:#465362; margin-top: -5px"> Journaling </h1>
+            <hr style="width: 500px; height: 2px;  margin-top: -1%">
+            <p> Journaling is a habit. It’s not a hobby for when you’re feeling great or have the
+                luxury of time. It’s a habit we develop that we actually need most when we’re feeling anxious,
+                hurried or just not in the mood. And we don’t have to beat ourselves up whenever we fall short of
+                writing daily. Journaling can also be a check-in tool. There are seasons in our lives when we feel
+                balanced and motivated, and we’ve got our priorities straight. And other times we’re stressed and
+                wonder what it’s all for.
+                <div class="clearfix"></div>
+                <a href="https://vanillapapers.net/2019/11/13/journaling-tips/">Tips for journaling </a>
+            </p>
+        </div> 
+    </div>
+
+    <div class="row" style="margin-top: 20px">
+        <div class="col-lg-7" style="margin-left: 5%">
+            <label> Set duration for this challenge:</label>
+            <input style="color: #465362" type="number" name="days" min="1" max="100" placeholder="30">
+            <label >days</label>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-lg-7" style="margin-left: 5%">
+            <label> Set reminders:</label>
+            <input style="color: #465362" type="number" name="h" min="1" max="24" placeholder="8">
+            <label> h </label>
+            <input style="color: #465362" type="number" name="min" min="00" max="60" placeholder="30">
+            <label >min</label>
+
+            <div class="form-check form-switch" style="margin-left: 14%; margin-top:2%">
+                <input class="form-check-input" type="checkbox" data-toggle="switchbutton" checked data-width="55" checked data-height="20" data-onstyle="secondary">
+                <label>I don't want reminders.</label>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="button-box col-lg-11 text-right">
+            <a href="challenges.html" class="btn btn-primary" role="button"
+               style="border: #465362; background-color: #465362; color: #FAE3E3; opacity: 80%;
+                 font-weight: bold; letter-spacing: 1px; transition-duration: 0.4s;">
+                Back</a>
+
+            <button class="btn btn-primary" id="ModalBtn" style="border: #465362; background-color: #465362; color: #FAE3E3; opacity: 80%; width: 20%;
+                 font-weight: bold; letter-spacing: 1px">
+                Start challenge  </button>
+
+            <a href="challenges.html">
+                <div id="myModal" class="modal">
+                    <div class="modal-content" style="width: 50%">
+                        <span class="close">&times;</span>
+                        <p style="text-align: center">You've started this challenge. Have fun!</p>
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("ModalBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js">
+</script>
+
+</body>
+</html>

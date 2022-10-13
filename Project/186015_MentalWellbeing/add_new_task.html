@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Task</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <style>
+        .header span {
+            font-size: 30px;
+        }
+        .container label {
+            font-size: 17px;
+            color: #465362;
+        }
+        .container input {
+            font-size: 13px;
+            color: #465362;
+        }
+        .container select {
+            font-size: 15px;
+            color: #465362;
+            width: auto;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.44), 0 17px 50px 0 rgba(0, 0, 0, 0.39);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 200px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+
+        .modal-content {
+            background-color: #fefefe;
+            position: center;
+            margin-left: 20%;
+            color: #465362;
+            padding: 20px;
+            border: 1px solid #888;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            float: right;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: #FAE3E3">
+<div w3-include-html="menu.html"></div>
+<script>
+    w3.includeHTML();
+</script>
+
+<div class="header">
+    <div class="header-text" style="text-align: center; vertical-align: middle">
+        <h1 style="font-size: 50px; color:#465362"><span class="glyphicon glyphicon-pencil"></span> Add new task </h1>
+        <hr style="width: 500px; height: 3px; position: center; vertical-align: center; margin-left: 30%;
+        margin-top: -0.6%">
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="group" style="margin-top: 1%"> <label class="label">Name for your new task:</label>
+                <input type="text" class="input" placeholder="Name">
+            </div>
+        </div>
+
+        <div class="col-auto">
+            <div class="group"> <label class="label">Choose a list for your new task:</label>
+                <select class="form-control">
+                    <option>Daily tasks</option>
+                    <option>List 2</option>
+                    <option>List 3</option>
+                    <option>List 4</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <br>
+
+
+    <div class="row">
+        <div class="col-md-10" style="margin-left: -1%; border: #465362; border-radius: 2px">
+            <div class="group"> <label class="label">Set reminders: </label>
+                <div class="clearfix"></div>
+                <br>
+
+                <div class="card" style="width: 800px; background-color: #FAE3E3; border-color: #465362; margin-left: 60px">
+                    <div class="card-body">
+                        <label class="label">Week days:</label>
+                        <p class="card-text">
+                        <div class="form-check">
+                        &nbsp &nbsp &nbsp &nbsp
+                        <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                Monday
+                            </label>
+                        &nbsp &nbsp &nbsp &nbsp
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Tuesday
+                        </label>
+                        &nbsp &nbsp &nbsp &nbsp
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Wednesday
+                        </label>
+                        &nbsp &nbsp &nbsp &nbsp
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Thursday
+                        </label>
+                        &nbsp &nbsp &nbsp &nbsp
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Friday
+                        </label>
+                        &nbsp &nbsp &nbsp &nbsp
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Saturday
+                        </label>
+                        &nbsp &nbsp &nbsp &nbsp
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Sunday
+                        </label>
+                        </div>
+
+                        <div class="form-check" style="margin-left: 40%">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">
+                                Everyday
+                            </label>
+                        </div>
+                        </p>
+                        <br>
+
+                        <label style="margin-left: 7px"> Set time for your reminders: &nbsp </label>
+                        <input style="color: #465362; width: 30px; height: 30px" type="number" name="h" min="1" max="24">
+                        <label style="font-size: 15px"> h </label>
+                        <input style="color: #465362; width: 30px; height: 30px" type="number" name="min" min="00" max="60">
+                        <label style="font-size: 15px">min</label>
+                        <br>
+                        <br>
+
+                        <label style="margin-left: 7px"> Repeat every: &nbsp </label>
+                        <input style="color: #465362; width: 30px; height: 30px" type="number" min="1">
+                        <select class="form-control">
+                            <option>minutes</option>
+                            <option>hours</option>
+                            <option>days</option>
+                        </select>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                >No reminders</label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <br>
+            <label style="margin-left: 7px"> Set duration for your task: &nbsp </label>
+            <input style="color: #465362; width: 30px; height: 30px" type="number" name="h" min="1" max="24">
+            <label style="font-size: 15px"> h </label>
+            <input style="color: #465362; width: 30px; height: 30px" type="number" name="min" min="00" max="60">
+            <label style="font-size: 15px">min</label>
+        </div>
+
+
+        <div class="col-lg-7" style="margin-top: 2%">
+            <div class="form-check form-switch" style="margin-left: 7%">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                >No duration</label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row" style="margin-top: 4%">
+        <div class="button-box col-lg-12 text-right">
+            <a href="home.html" class="btn btn-primary" role="button"
+               style="border: #465362; background-color: #465362; color: #FAE3E3; opacity: 80%;
+                 font-weight: bold; letter-spacing: 1px; transition-duration: 0.4s;">
+                Cancel</a>
+
+            <button class="btn btn-primary" id="ModalBtn" style="border: #465362; background-color: #465362;
+            color: #FAE3E3; opacity: 80%; width: 20%;
+                 font-weight: bold; letter-spacing: 1px">
+                Save new task  </button>
+
+            <a href="home.html">
+                <div id="myModal" class="modal">
+                    <div class="modal-content" style="width: 50%">
+                        <span class="close">&times;</span>
+                        <p style="text-align: center">Your new task is added!</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("ModalBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

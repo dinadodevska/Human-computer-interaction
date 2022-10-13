@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+    <style>
+        .container p {
+            font-size: 20px;
+            color: #465362;
+        }
+
+        .container hr {
+            color: #465362;
+            border-top: 1px #465362;
+            margin-top: 25px;
+            width: 60%;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.44), 0 17px 50px 0 rgba(0, 0, 0, 0.39);
+        }
+
+    </style>
+
+
+
+</head>
+<body style="background-color: #FAE3E3">
+<div w3-include-html="menu.html"></div>
+<script>
+    w3.includeHTML();
+</script>
+
+<div class="container">
+    <div class="row" style="margin-top: 5%">
+        <div class="col-md-6">
+            <p> <span class="glyphicon glyphicon-check"></span> Your tasks for today: </p>
+            <br>
+            <p style="font-size: 20px; margin-bottom: -45px"> Drink water </p>
+            <a href="view_task.html">
+                <button class="btn btn-primary" style="border: #465362; background-color: #465362; color: #FAE3E3;
+                    opacity: 80%; width: 20%; font-weight: bold; letter-spacing: 1px; margin-left: 70%; margin-bottom: -35px">
+                    View task </button>
+
+            </a>
+
+            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+        </div>
+
+
+        <div class="col-sm-1" style="margin-top: -20%; margin-left: -10px">
+            <div class="outer" style="width: 1px; height: 1000px; position:relative; overflow: hidden">
+                <div class="inner" style="position: absolute; width: 100%; height: 40%;background:#465362;
+                top:30%; box-shadow: 0 0 30px 20px #465362">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <p> <span class="glyphicon glyphicon-list"></span> Your lists: </p>
+            <br>
+            <p style="font-size: 20px; margin-bottom: -45px"> Daily tasks </p>
+            <a href="list.html">
+                <button class="btn btn-primary" style="border: #465362; background-color: #465362; color: #FAE3E3;
+                    opacity: 80%; width: 20%; font-weight: bold; letter-spacing: 1px; margin-left: 70%; margin-bottom: -35px">
+                    View list </button>
+
+            </a>
+
+            <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

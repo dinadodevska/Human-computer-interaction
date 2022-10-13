@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+    </style>
+</head>
+<body style="background-color: #FAE3E3">
+
+    <nav class="navbar fixed-top navbar-expand navbar-light bg-white ">
+        <div class="container-md">
+            <div id="navbarContent" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item"><a href="home.html" class="nav-link font-weight-bold text-uppercase"> <span class="glyphicon glyphicon-home"></span>&nbsp &nbsp Home &nbsp &nbsp &nbsp &nbsp</a></li>
+                    <li class="nav-item"><a href="add_new_task.html" class="nav-link font-weight-bold text-uppercase"> <span class="glyphicon glyphicon-pencil"></span> Add new task &nbsp &nbsp &nbsp &nbsp</a></li>
+                    <li class="nav-item"><a href="challenges.html" class="nav-link font-weight-bold text-uppercase"> <span class="glyphicon glyphicon-bookmark"></span> Challenges &nbsp &nbsp &nbsp &nbsp</a></li>
+
+                </ul>
+
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" style="padding-left: 500%; overflow: visible; white-space: nowrap"><a href="login.html" class="nav-link font-weight-bold text-uppercase"> <span class="glyphicon glyphicon-log-out"></span> Log out </a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("ModalBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
